@@ -1,16 +1,13 @@
-# buttons_1
+# Cause mobile application
 
-A new Flutter project.
+Cause is customizable tracking of any event and calculating correlations between them.
 
-## Getting Started
+Cause is a set of tools to track any event you need to keep control and improve your life. It may be sleep habits, eating, exercises, emotions, productivity, external events - you decide what to track. Tracking is a convenient input of event time, when it occurs. You can add events retrospectively.
 
-This project is a starting point for a Flutter application.
+All events and their occurrences are saved, so they can be analyzed in the app. Or exported to CSV, so you can use your own tools to play with your data.
 
-A few resources to get you started if this is your first Flutter project:
+**If you want to test or contribute to the app, contact me at dg@wata.fun (Daniil Galkin).**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+_Track anything. Get correlations. Think of causations._
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is an open source project, written in flutter, under GNU 3 license.
