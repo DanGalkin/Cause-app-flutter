@@ -13,3 +13,7 @@ Set<DateTime> daysFromRange(DateTimeRange range) {
   }
   return days;
 }
+
+DateTime oldestDate(List<DateTime> dates) {
+  return dates.reduce((min, date) => date.isBefore(min) ? date : min);
+}
