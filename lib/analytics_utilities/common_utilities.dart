@@ -15,5 +15,10 @@ Set<DateTime> daysFromRange(DateTimeRange range) {
 }
 
 DateTime oldestDate(List<DateTime> dates) {
-  return dates.reduce((min, date) => date.isBefore(min) ? date : min);
+  return dates.reduce((oldest, date) => date.isBefore(oldest) ? date : oldest);
+}
+
+DateTime earliestDate(List<DateTime> dates) {
+  return dates
+      .reduce((earliest, date) => date.isAfter(earliest) ? date : earliest);
 }

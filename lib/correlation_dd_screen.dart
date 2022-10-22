@@ -57,11 +57,15 @@ class _CorrelationDDScreenState extends State<CorrelationDDScreen> {
     DateTime defaultStartDate;
 
     //If default is calculated, we assume timeCreated and Notes are not null
-    defaultStartDate = startOfDay(oldestDate([
-      params[0].timeCreated!,
-      params[1].timeCreated!,
-      params[0].firstEvent(),
-      params[1].firstEvent(),
+    defaultStartDate = startOfDay(earliestDate([
+      oldestDate([
+        params[0].timeCreated!,
+        params[0].firstEvent(),
+      ]),
+      oldestDate([
+        params[1].timeCreated!,
+        params[1].firstEvent(),
+      ]),
     ]));
 
     return DateTimeRange(start: defaultStartDate, end: defaultEndDate);
